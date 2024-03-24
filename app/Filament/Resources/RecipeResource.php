@@ -26,7 +26,12 @@ class RecipeResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Textarea::make('ingredients')
+                Forms\Components\Repeater::make('ingredients')
+                    ->schema([
+                        Forms\Components\TextInput::make('amount'),
+                        Forms\Components\TextInput::make('ingredient'),
+                    ])
+                    ->columns(2)
                     ->columnSpanFull(),
                 Forms\Components\Select::make('type')
                     ->options([
@@ -39,7 +44,7 @@ class RecipeResource extends Resource
                 Forms\Components\TextInput::make('cover')
                     ->maxLength(255)
                     ->default(null),
-                Forms\Components\Textarea::make('preparation')
+                Forms\Components\Textarea::make('instructions')
                     ->columnSpanFull(),
             ]);
     }
@@ -48,9 +53,6 @@ class RecipeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                    ->label('ID')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('type'),

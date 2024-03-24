@@ -20,12 +20,20 @@ class RecipeFactory extends Factory
      */
     public function definition(): array
     {
+        $amounts = ['1 TL', '2 Stück', '3 EL', 'etwas'];
+        $ingredients = ['Zwiebel', 'Salz', 'Veganes Hackfleisch', 'Ketchup'];
+        
         return [
             'name' => $this->faker->name(),
-            'ingredients' => '{}',
-            'type' => $this->faker->randomElement(["meat","vegetarian","vegan"]),
+            'ingredients' => [
+                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
+                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
+                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
+                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
+            ],
+            'type' => $this->faker->randomElement(["meat", "vegetarian", "vegan"]),
             'cover' => $this->faker->word(),
-            'preparation' => $this->faker->text(),
+            'instructions' => $this->faker->text(),
         ];
     }
 }

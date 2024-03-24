@@ -20,7 +20,7 @@ class Recipe extends Model
         'ingredients',
         'type',
         'cover',
-        'preparation',
+        'instructions',
     ];
 
     /**
