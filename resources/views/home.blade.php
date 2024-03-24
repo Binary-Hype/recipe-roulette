@@ -22,7 +22,7 @@
         <h2 class="text-3xl font-serif text-center font-bold mb-5">Der Geschmacksentscheider: Nie wieder ratlos vor
             dem Kühlschrank</h2>
         <div class="flex gap-5 items-center">
-            <p>Willkommen in unserer Welt der Zufallsrezepte! Unsere Leidenschaft für Kochen und die Freude am
+            <p class="text-lg">Willkommen in unserer Welt der Zufallsrezepte! Unsere Leidenschaft für Kochen und die Freude am
                 Entdecken
                 neuer Geschmäcker hat uns inspiriert, diesen Generator zu entwickeln. Unser Ziel? Euch dabei zu
                 unterstützen, das Kochen neu zu entdecken und die tägliche Frage 'Was koche ich heute?' spannend und
@@ -35,14 +35,14 @@
     <div class="content">
         <h2 class="text-3xl font-serif text-center font-bold mb-5">Ganz einfach zum nächsten Lieblingsrezept</h2>
 
-        <div class="my-4">
+        <div class="text-lg my-4">
             <div class="flex items-center gap-2 mb-3">
                 <span class="font-serif text-primary text-3xl">1</span>
                 Präferenzen auswählen
             </div>
             <div class="flex items-center gap-2 mb-3">
                 <span class="font-serif text-primary text-3xl">2</span>
-                Rezept per Zufalls auswählen lassen
+                Rezept per Zufall auswählen lassen
             </div>
             <div class="flex items-center gap-2 mb-3">
                 <span class="font-serif text-primary text-3xl">3</span>
