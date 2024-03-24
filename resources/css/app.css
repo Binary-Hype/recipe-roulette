@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-display: swap;
-        font-family: 'Gabarito';
-        font-style: normal;
-        font-weight: 400;
-        src: url('/public/fonts/Gabarito-Regular.ttf') format('ttf');
+    .content {
+        @apply max-w-4xl w-full px-6 mb-24 mx-auto
     }
+
+    .swap-flip {
+        perspective: 1000px !important;
+    }
+}
+
+@layer utilities {
+
 }

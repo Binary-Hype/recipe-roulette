@@ -9,7 +9,8 @@ export default {
     ],
     theme: {
         fontFamily: {
-            sans: ['Gabarito', 'system-ui'],
+            sans: ['Gabarito', 'sans-serif'],
+            serif: ['Kalam', 'serif'],
         },
         extend: {},
     },
