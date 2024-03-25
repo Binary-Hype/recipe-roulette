@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('meta-description', "Beantworten Sie die Frage 'Was koche ich heute?' und entdecke täglich neue Rezeptideen für vegane, vegetarische oder Fleischgerichte. Wählen Sie Ihre Präferenz und lasse dich von unserer Auswahl inspirieren. Deine nächste kulinarische Entdeckungsreise beginnt mit nur einem Klick!")
+
 @section('content')
     <!-- Hero -->
     <div class="hero relative min-h-[60vh] mb-10">

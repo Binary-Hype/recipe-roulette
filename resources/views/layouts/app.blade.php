@@ -16,12 +16,14 @@
         @googlefonts('headline')
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <meta name="description" content="@yield('meta-description')" />
     </head>
     <body class="antialiased">
         <!-- Navbar -->
         <div class="navbar bg-base-100">
             <a href="/" class="flex gap-2 cursor-pointer">
-                <img class="h-10 w-10" src="/img/logo.svg">
+                <img class="h-10 w-10" src="/img/logo.svg" alt="Logo">
                 <div class="font-serif">Rezept Roulette</div>
             </a>
         </div>
@@ -33,7 +35,7 @@
             <footer class="footer p-10 max-w-4xl w-full px-6 mx-auto text-neutral-content">
                 <aside>
                     <a href="https://binary-hype.com" target="_blank" rel="noopener noreferrer">
-                        <img class="h-8 mb-2" src="/img/binary-hype-logo.png">
+                        <img class="h-8 mb-2" src="/img/binary-hype-logo.png" alt="Binary Hype Logo">
                     </a>
                     <p>Tobias Kokesch<br>Web Development Wizard</p>
                     <p>Copyright 2024</p>

@@ -30,10 +30,12 @@
     </div>
 
     @if($recipe)
+
         <div class="flex justify-center">
             <label class="swap swap-flip mx-auto" x-data="{ instructions: false }">
                 <input type="checkbox"/>
                 <div class="swap-on" :class="{'h-0': !instructions}">
+                    <span class="text-sm text-neutral-500">* Bilder können vom eigentlichen Gericht abweichen</span>
                     <div class="card shadow-xl max-w-2xl" @click="instructions = ! instructions">
                         <figure>
                             <img class="w-[670px] max-w-full object-cover" src="{{ url('storage/' . $recipe->cover) }}"
@@ -57,6 +59,7 @@
                     </div>
                 </div>
                 <div class="swap-off">
+                    <span class="text-sm text-neutral-500">* Bilder können vom eigentlichen Gericht abweichen</span>
                     <div class="card shadow-xl max-w-2xl" @click="instructions = ! instructions">
                         <figure>
                             <img class="w-[670px] max-w-full object-cover" src="{{ url('storage/' . $recipe->cover) }}"
