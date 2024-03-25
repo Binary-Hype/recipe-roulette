@@ -7,7 +7,10 @@
 
 
         <title>Rezept Roulette @yield('title')</title>
-
+        @if(config('app.env') === 'production')
+            <script defer data-domain="rezept-roulette.app"
+                    src="https://plausible.io/js/script.hash.outbound-links.js"></script>
+        @endif
 
         @googlefonts
         @googlefonts('headline')
