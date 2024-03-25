@@ -5,24 +5,22 @@
     <div class="content prose">
         <article>
             <h1>Impressum</h1>
-            <h2>Angaben gemäß § 5 TMG:</h2>
-            <p>
-                Tobias Kokesch<br />
-                Fleischmannplatz 9<br />
-                90419 Nürnberg<br />
-            </p>
+
+            <p>Tobias Kokesch<br/>
+                Fleischmannplatz 9<br/>
+                90419 N&uuml;rnberg</p>
+
             <h2>Kontakt</h2>
-            <p>E-Mail: <a href="mailto: hallo@binary-hype.com">hallo@binary-hype.com</a></p>
-            <h2>Hinweise zur Webseite</h2>
-            <h3>Information gemäß § 36 VSBG</h3>
-            <p>
-                Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in
-                Verbrauchersachen) erklärt der Betreiber dieser Website:
-            </p>
-            <p>
-                Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer
-                Verbraucherschlichtungsstelle teilzunehmen.
-            </p>
+            <p>E-Mail: hallo@binary-hype.com</p>
+
+            <h2>EU-Streitschlichtung</h2>
+            <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a
+                    href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br/>
+                Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+
+            <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+                Verbraucherschlichtungsstelle teilzunehmen.</p>
             <h2>Haftungsausschluss</h2>
             <h3>Haftung für Inhalte</h3>
             <p>
