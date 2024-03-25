@@ -42,7 +42,11 @@ class RecipeResource extends Resource
 
                     ->required(),
                 Forms\Components\FileUpload::make('cover')
+                    ->image()
+                    ->imageEditor()
                     ->directory('covers')
+                    ->optimize('webp')
+                    ->resize(50)
                     ->default(null),
                 Forms\Components\Textarea::make('instructions')
                     ->columnSpanFull(),
