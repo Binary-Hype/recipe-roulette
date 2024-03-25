@@ -40,7 +40,6 @@
         </button>
     </div>
 
-
     @if($recipe)
         <div class="flex justify-center">
             <label class="swap swap-flip mx-auto" x-data="{ instructions: false }">
@@ -48,8 +47,8 @@
                 <div class="swap-on" :class="{'h-0': !instructions}">
                     <div class="card shadow-xl max-w-2xl" @click="instructions = ! instructions">
                         <figure>
-                            <img class=""
-                                 src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img class="w-[670px] max-w-full object-cover" src="{{ url('storage/' . $recipe->cover) }}"
+                                 alt="{{ $recipe->name }}"/>
                         </figure>
 
                         <div class="card-body">
@@ -71,8 +70,8 @@
                 <div class="swap-off">
                     <div class="card shadow-xl max-w-2xl" @click="instructions = ! instructions">
                         <figure>
-                            <img class=""
-                                 src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img class="w-[670px] max-w-full object-cover" src="{{ url('storage/' . $recipe->cover) }}"
+                                 alt="{{ $recipe->name }}"/>
                         </figure>
 
                         <div class="card-body">

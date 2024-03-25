@@ -41,8 +41,8 @@ class RecipeResource extends Resource
                     ])
 
                     ->required(),
-                Forms\Components\TextInput::make('cover')
-                    ->maxLength(255)
+                Forms\Components\FileUpload::make('cover')
+                    ->directory('covers')
                     ->default(null),
                 Forms\Components\Textarea::make('instructions')
                     ->columnSpanFull(),
