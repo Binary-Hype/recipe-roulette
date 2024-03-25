@@ -11,7 +11,8 @@
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
-        "spatie/laravel-google-fonts": "^1.4"
+        "spatie/laravel-google-fonts": "^1.4",
+        "spatie/laravel-sitemap": "^7.2"
     },
     "require-dev": {
         "doctrine/dbal": "^3.8",
