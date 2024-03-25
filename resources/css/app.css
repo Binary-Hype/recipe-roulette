@@ -10,6 +10,10 @@
     .swap-flip {
         perspective: 1000px !important;
     }
+
+    .btn-primary {
+        @apply text-white !important;
+    }
 }
 
 @layer utilities {

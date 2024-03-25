@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
+        <link rel="icon" type="image/x-icon" href="/img/logo.svg">
 
         <title>Rezept Roulette @yield('title')</title>
         @if(config('app.env') === 'production')
@@ -20,7 +20,10 @@
     <body class="antialiased">
         <!-- Navbar -->
         <div class="navbar bg-base-100">
-            <a href="/" class="btn btn-ghost text-xl">Rezept Roulette</a>
+            <a href="/" class="flex gap-2 cursor-pointer">
+                <img class="h-10 w-10" src="/img/logo.svg">
+                <div class="font-serif">Rezept Roulette</div>
+            </a>
         </div>
 
         @yield('content')
