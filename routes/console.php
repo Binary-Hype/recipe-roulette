@@ -3,4 +3,4 @@
 use App\Console\Commands\DeleteUnusedFiles;
 use Illuminate\Support\Facades\Schedule;
 
-Schedule::command(DeleteUnusedFiles::class)->everyMinute();
+Schedule::command(DeleteUnusedFiles::class)->daily()->withoutOverlapping();
