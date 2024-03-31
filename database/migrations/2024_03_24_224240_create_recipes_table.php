@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id');
             $table->string('name');
             $table->json('ingredients')->nullable();
-            $table->enum('type', ["meat","vegetarian","vegan"]);
+            $table->enum('type', ['meat', 'vegetarian', 'vegan']);
             $table->string('cover')->nullable();
             $table->text('instructions')->nullable();
             $table->timestamps();

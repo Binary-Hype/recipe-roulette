@@ -2,9 +2,8 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 use App\Models\Recipe;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RecipeFactory extends Factory
 {
@@ -22,16 +21,16 @@ class RecipeFactory extends Factory
     {
         $amounts = ['1 TL', '2 Stück', '3 EL', 'etwas'];
         $ingredients = ['Zwiebel', 'Salz', 'Veganes Hackfleisch', 'Ketchup'];
-        
+
         return [
             'name' => $this->faker->name(),
             'ingredients' => [
-                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
-                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
-                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
-                ["amount" => $this->faker->randomElement($amounts), "ingredient" => $this->faker->randomElement($ingredients)],
+                ['amount' => $this->faker->randomElement($amounts), 'ingredient' => $this->faker->randomElement($ingredients)],
+                ['amount' => $this->faker->randomElement($amounts), 'ingredient' => $this->faker->randomElement($ingredients)],
+                ['amount' => $this->faker->randomElement($amounts), 'ingredient' => $this->faker->randomElement($ingredients)],
+                ['amount' => $this->faker->randomElement($amounts), 'ingredient' => $this->faker->randomElement($ingredients)],
             ],
-            'type' => $this->faker->randomElement(["meat", "vegetarian", "vegan"]),
+            'type' => $this->faker->randomElement(['meat', 'vegetarian', 'vegan']),
             'cover' => $this->faker->word(),
             'instructions' => $this->faker->text(),
         ];

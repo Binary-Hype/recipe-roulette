@@ -8,7 +8,7 @@ return [
      */
     'fonts' => [
         'default' => 'https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap',
-        'headline' => 'https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'
+        'headline' => 'https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap',
     ],
 
     /*

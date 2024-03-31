@@ -8,6 +8,7 @@ use Livewire\Component;
 class RecipeRoulette extends Component
 {
     public ?Recipe $recipe;
+
     public string $type = 'vegan';
 
     public function render()
@@ -15,10 +16,10 @@ class RecipeRoulette extends Component
         return view('livewire.recipe-roulette');
     }
 
-//    public function mount()
-//    {
-//        $this->recipe = Recipe::where('type', $this->type)->inRandomOrder()->first() ?? null;
-//    }
+    //    public function mount()
+    //    {
+    //        $this->recipe = Recipe::where('type', $this->type)->inRandomOrder()->first() ?? null;
+    //    }
 
     public function fetchRandomRecipe()
     {
