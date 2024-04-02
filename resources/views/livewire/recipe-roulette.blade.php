@@ -1,5 +1,5 @@
 <div class="content">
-    <div class="flex gap-3 justify-center mb-5">
+    <div class="flex flex-col sm:flex-row gap-3 justify-center mb-5">
         <label class="btn btn-neutral has-[:checked]:btn-primary cursor-pointer px-3">
             <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path class="fill-current"
