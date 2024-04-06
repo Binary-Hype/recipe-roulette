@@ -45,7 +45,7 @@ class RecipeResource extends Resource
                     ->optimize('webp')
                     ->resize(50)
                     ->default(null),
-                Forms\Components\Textarea::make('instructions')
+                Forms\Components\RichEditor::make('instructions')
                     ->columnSpanFull(),
             ]);
     }

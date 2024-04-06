@@ -46,7 +46,7 @@
 
                         <div class="card-body">
                             <h2 class="card-title">{{ $recipe->name }}</h2>
-                            <p>{{ $recipe->instructions }}</p>
+                            <p>{!!  $recipe->instructions !!}</p>
                             <div class="card-actions justify-end">
                                 <div class="btn btn-sm btn-link no-underline text-accent">
                                     <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
