@@ -75,7 +75,7 @@
 
                         <div class="card-body">
                             <h2 class="card-title">{{ $recipe->name }}</h2>
-                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-3">
                                 @if ($recipe->ingredients)
                                     @foreach ($recipe->ingredients as $item)
                                         <li>{{ $item['amount'] }} {{ $item['ingredient'] }}</li>
@@ -110,7 +110,7 @@
 
                     <div class="card-body">
                         <h2 class="card-title">Dein heutiges Gericht</h2>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1">
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-3">
                             <li>1 Portion großen Hunger</li>
                             <li>2 EL Unentschlossenheit</li>
                             <li>3 Prisen Abenteuerlust</li>
