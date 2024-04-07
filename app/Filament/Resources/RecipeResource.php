@@ -8,6 +8,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class RecipeResource extends Resource
@@ -69,7 +70,12 @@ class RecipeResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                SelectFilter::make('type')
+                    ->options([
+                        'vegan' => 'Vegan',
+                        'vegetarian' => 'Vegetarian',
+                        'meat' => 'Meat',
+                    ])
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
