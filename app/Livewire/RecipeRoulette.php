@@ -18,6 +18,12 @@ class RecipeRoulette extends Component
 
     public function fetchRandomRecipe()
     {
-        $this->recipe = Recipe::where('type', $this->type)->inRandomOrder()->first() ?? null;
+        $randomRecipe = Recipe::where('type', $this->type)->inRandomOrder()->first();
+
+        if ($this->recipe === null || $randomRecipe !== $this->recipe) {
+            $this->recipe = $randomRecipe;
+        } else {
+            $this->fetchRandomRecipe();
+        }
     }
 }
