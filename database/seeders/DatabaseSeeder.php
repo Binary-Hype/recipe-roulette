@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         Recipe::factory()->count(10)->create();
 
         User::factory()->create([
-            'name' => 'Tobse',
+            'name' => 'Admin',
             'email' => 'dev@binary-hype.com',
         ]);
     }
